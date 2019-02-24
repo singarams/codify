@@ -12,8 +12,7 @@ public class CodeChallenge {
 
     public static void main(String args[]) throws Exception {
 
-//        final String url = args[0];
-        String url = "https://exxzwdkw7i.execute-api.ap-southeast-2.amazonaws.com/test/v1/cars";
+        final String url = args[0]; // Gets the input supplied 
 
         SortOrderService sortOrderService = new SortOrderService();
 
