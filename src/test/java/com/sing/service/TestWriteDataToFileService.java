@@ -17,7 +17,7 @@ class TestWriteDataToFileService {
 
     @DisplayName("Trying to write and print simple data")
     @Test
-    void writeDataSuccess() {
+    void writeDataSuccess()  throws IOException {
         List<NamesWithCars> validData = new ArrayList<>();
         validData.add(new NamesWithCars("Nissan","X-trail","Melbourne Show"));
         Boolean success = WriteDataToFileService.writeData(validData);
@@ -27,7 +27,7 @@ class TestWriteDataToFileService {
 
     @DisplayName("No data to write")
     @Test
-    void writeDataFailed() {
+    void writeDataFailed() throws IOException {
         List<NamesWithCars> validData = new ArrayList<>();
         Boolean success = WriteDataToFileService.writeData(validData);
         assertFalse(success);
@@ -36,7 +36,7 @@ class TestWriteDataToFileService {
 
     @DisplayName("Trying to write and print complex data")
     @Test
-    void writeDatacomplexData() {
+    void writeDatacomplexData() throws IOException {
         List<NamesWithCars> validData = new ArrayList<>();
         validData.add(new NamesWithCars("Nissan","X-trail","Melbourne Show"));
         validData.add(new NamesWithCars("Nissan","X-trail","India Show"));

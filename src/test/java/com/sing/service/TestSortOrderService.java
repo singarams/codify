@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -36,7 +37,7 @@ class TestSortOrderService {
 
     @DisplayName("Write Data to list testing")
     @Test
-    void writeDataToList() {
+    void writeDataToList() throws IOException {
 
         SortOrderService sortOrderService = new SortOrderService();
         boolean success = sortOrderService.printAndWriteDate(expectedData);

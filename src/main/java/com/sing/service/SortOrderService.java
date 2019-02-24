@@ -58,7 +58,7 @@ public class SortOrderService {
 
     protected OrderByShow getOrderByShow() { return new OrderByShow(); }
 
-    public Boolean printAndWriteDate(final List<NamesWithCars> sortedData) {
+    public Boolean printAndWriteDate(final List<NamesWithCars> sortedData) throws IOException {
 
         return WriteDataToFileService.writeData(sortedData);
 
