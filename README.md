@@ -1,3 +1,10 @@
+Build Running in [travis-ci](https://travis-ci.com/singarams/codify)
+
+[![Build Status](https://travis-ci.com/singarams/codify.svg?branch=master)](https://travis-ci.com/singarams/codify)
+
+Code Coverage is running in [JaCoCo](https://coveralls.io/github/singarams/codify?branch=master)
+
+[![Coverage Status](https://coveralls.io/repos/github/singarams/codify/badge.svg?branch=master)](https://coveralls.io/github/singarams/codify?branch=master)
 
 # Coding Task
 
