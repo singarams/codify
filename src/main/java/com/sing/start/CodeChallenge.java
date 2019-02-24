@@ -12,7 +12,7 @@ public class CodeChallenge {
 
     public static void main(String args[]) throws Exception {
 
-        final String url = args[0];
+        final String url = args[0]; // Gets the input supplied 
 
         SortOrderService sortOrderService = new SortOrderService();
 
